@@ -1,0 +1,1310 @@
+html {
+    background-color: #B3E5FC;
+}
+
+body {
+    background-color: #FFF;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    position: relative;
+    /*box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);*/
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+}
+
+@-webkit-viewport {
+    width: device-width
+}
+
+@-moz-viewport {
+    width: device-width
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+@-o-viewport {
+    width: device-width
+}
+
+@viewport {
+    width: device-width
+}
+
+header {
+    height: auto;
+    width: 100%;
+    background-color: #006599;
+    padding: 2em 0;
+}
+
+header img {
+    height: 90px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 0.75em;
+    text-shadow: 0 0 20px #666666;
+    text-transform: capitalize;
+}
+
+header+div,
+.options {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header+div,
+#table {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.options {
+    min-height: 15.5em;
+}
+
+header+div label,
+.select label {
+    text-align: center;
+    display: block;
+    font-size: 1.75em;
+    margin: 0.8em 0;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.select label {
+    font-size: 1.25em;
+}
+
+header+div input[type="search"],
+.select select {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ddd;
+    color: black;
+    height: 50px;
+}
+
+.options .select {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding-right: 1%;
+    box-sizing: border-box;
+}
+
+.options .select:nth-child(even) {
+    padding-right: 0;
+    padding-left: 1%;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    
+    color: #000;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: #000;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: #000;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    
+    color: #000;
+}
+
+.center {
+    text-align: center;
+}
+
+a.linky {
+    text-decoration: none;
+    color: #666;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 1em 0;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+    clear: right;
+}
+
+button.right,
+button.left {
+    margin: 0 auto;
+    width: 45%;
+    padding: 0 1em;
+}
+
+.left {
+    float: left;
+    clear:left;
+}
+
+.half {
+    width: 50%;
+}
+
+.block {
+    display: block;
+}
+
+.clear {
+    clear: both
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    padding: 1em;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.superheroes {
+    border-spacing: 0;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    /*box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);*/
+    border:1px solid grey;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.cartcl {
+    min-width: 80%;
+}
+
+.cartcl h1 {
+    padding: 1em;
+}
+
+.cartcl p {
+    margin-bottom:2em;
+    text-align: center;
+}
+
+.cartcl ul, .posCourses ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.333em;
+}
+
+.cartcl ul li, .posCourses ol li{
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+.cartcl ul li a, .posCourses ol li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    padding: 0.5em;
+    box-sizing: border-box;
+    -webkit-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
+    -ms-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    transition: all 0.75s ease-in;
+    background-color: #ffffff;
+}
+
+.cartcl ul li .itmDel,
+.electivedel {
+    box-sizing: border-box;
+}
+.cartcl ul li {
+        margin: 1em 0;
+    }
+
+.checkmark {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.checkmark:after {
+    /*Add another block-level blank space*/
+    
+    content: '';
+    display: block;
+    /*Make it a small rectangle so the border will create an L-shape*/
+    
+    width: 3px;
+    height: 8px;
+    position: relative;
+    top: -3px;
+    /*Add a white border on the bottom and left, creating that 'L' */
+    
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    
+    transform: rotate(45deg);
+}
+
+.fufillmentSect {
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.fufillmentSect h2 {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.fufillment {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.fufillment li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.notSelected {
+    color: black;
+}
+
+.isSelected {
+    color: gray;
+    padding-left: 20px;
+    /*
+    add check icon later
+    */
+}
+
+.cart {
+    -webkit-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
+    -ms-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    transition: all 0.75s ease-in;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+
+@media only screen and (max-width: 800px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    table.superheroes {
+        box-shadow: none;
+        border:none;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+     tr:not(.added) {
+        margin-top: 3em;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        /*box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);*/
+        border:1px solid grey;
+    }
+    tr.marg{
+        margin-top:3em;
+    }
+    tr.added{
+    border-left:1px solid grey;
+        border-right:1px solid grey;
+    }
+    tr.added td[colspan="3"]{
+    display: none;
+    }
+    .courses table tr td:first-child{
+    border-top:none;
+}
+    .courses table tr td{
+    border-left: none;
+      border-right: none;
+    }
+    .courses table tr:not(.added) td:last-child::after, tr.marg td:last-child::after{
+    top:120% !important;
+        opacity: 1 !important;
+        left:15% !important;
+    }
+    tr.marg td:last-child::after{
+    top:17em !important;
+    }
+    .courses table tr.continued td, .courses table tr.comment td{
+    border-top:1px solid grey !important;
+    }
+    .display p.description{
+    width:100%;
+        text-align: left;
+    }
+    .superheroes td, .courses td {
+        border: none;
+        border-bottom: 2px solid #eee;
+        position: relative;
+        padding-left: 49% !important;
+        text-align: left !important;
+    }
+    td.title {
+        background-color: #CDCDCD;
+    }
+    .link:hover td {
+        background-color: #85b0e5 !important;
+    }
+    .superheroes td:before, .courses td:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        padding: 1em 0 1em 1em;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .superheroes td:nth-last-of-type(3):before {
+        content: "Subject";
+    }
+    .superheroes td:nth-last-of-type(2):before {
+        content: "Course Title";
+    }
+    .superheroes td:nth-last-of-type(1):before {
+        content: "Course ID";
+    }
+    .courses td:nth-of-type(1):not(.continued):not(.comment):before {
+        content: "Reference #";
+    }
+    .courses td:nth-of-type(2):not(.continued):before {
+        content: "Instructor";
+    }
+    .courses td:nth-of-type(3):not(.continued):before {
+        content:"Open Seats";
+    }
+    .courses td:nth-of-type(4):not(.continued):before, .continued td:nth-of-type(2):before {
+        content:"Days";
+    }
+    .courses td:nth-of-type(5):not(.continued):before, .continued td:nth-of-type(3):before {
+        content:"Dates";
+    }
+    .courses td:nth-of-type(6):not(.continued):before, .continued td:nth-of-type(4):before {
+        content:"Times";
+    }
+    .courses td:nth-of-type(7):not(.continued):before, .continued td:nth-of-type(5):before {
+        content:"Room";
+    }
+    .courses tr.comment td:nth-of-type(1):before{
+    content:"Comment" !important;
+    }
+    .courses tr.added:not(.comment) td[colspan="7"]:before{
+    content:"" !important;
+    }
+    
+    /*Finish up another time ....*/
+    .subject {
+        background-color: #006599;
+    }
+    a.linky {
+        color: black;
+    }
+    a.linky:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+    }
+}
+
+.sortable {
+    position: relative;
+    padding-left: 2em !important;
+    cursor: pointer;
+    text-align: left;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8) url(../images/icons/sort-arrow.svg) no-repeat 4px 50%;
+    background-size: 0.8em 0.8em;
+    background-color: #006599;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sorted {
+    background-image: url(../images/icons/sort-arrow-sorted.svg);
+}
+
+.subject {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.smaller{
+    font-size:1.2em;
+}
+
+.stuck {
+    position: fixed;
+    top: 0;
+}
+
+.header.stuck {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.link {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.bTop {
+    border-top: 1px solid #a8a8a8;
+}
+
+input[type="search"] {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 95%;
+    display: block;
+    font-size: medium;
+    font-size: 14px;
+    border: 1px inset #777;
+    color: black;
+    border-radius: 5px;
+    background: white;
+    padding: 3px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.realwrap .display {
+    position: relative;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.selects,
+.subjectselect,
+.select {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.subjectselect {
+    margin-bottom: 30px;
+}
+
+.scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    max-height: 400px;
+    clear: both;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    min-height: 300px;
+}
+
+.loader {
+    background-image: url('../images/loader.gif');
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+span.loader {
+    display: inline-block;
+    margin-left: 15px;
+    width: 1em;
+    height: 1em;
+}
+
+.display {
+    width: 100%;
+}
+
+.display p {
+    padding: 1em;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    margin: 0.25em auto;
+    text-align: center;
+}
+
+.display p.full {
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+.wrap p,
+.electives p {
+    width: 100%;
+}
+
+.display a {
+    padding-left: 15px;
+}
+
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    z-index: 200;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+.floatSub {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+.swrap {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #006599;
+    box-sizing: border-box;
+    padding: 7.5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.tleft,
+.tright {
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+.tleft {
+    position: absolute;
+    left: 1em;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.tright {
+    margin-left: 50%;
+    display: inline-block;
+}
+
+fieldset select.select,
+.checkRow {
+    padding: 0.5em;
+    line-height: 1.2em;
+    display: block;
+    clear: both;
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bold
+}
+
+.checkRow label {
+    cursor: pointer;
+    padding: 0.5em;
+    display: block;
+}
+
+legend.floatingHeader {
+    background-color: #ccc;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 1em;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+}
+
+#electives {
+    width: 100%;
+}
+
+#step1, #step2, #step3 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .floatSub {
+        visibility: hidden
+    }
+    legend.floatingHeader {
+        visibility: hidden !important;
+    }
+    td {
+        min-width: 125px;
+    }
+    #electives {
+        width: 50%;
+    }
+}
+
+.floatingHeader .sortable {
+    width: 33.333%;
+}
+
+@media (min-width: 480px) {
+    .display {
+        min-width: 400px;
+    }
+}
+@media (max-width:600px){
+    tr.marg td:last-child::after{
+        top:18.2em !important;
+    }
+}
+
+@media (min-width: 800px) {
+    header+div,
+    #table {
+        padding: 0;
+    }
+    .display {
+        min-width: 700px;
+    }
+    #table {
+        top: 0;
+    }
+    .spacer {
+        padding-bottom: 8em;
+    }
+    .subject {
+        background-color: white;
+        width: 40%;
+        vertical-align: top;
+    }
+    body>.wrap {
+        padding-bottom: 2em;
+    }
+    .subject {
+        background-color: white;
+    }
+    button svg {
+        padding-top: 0 !important;
+    }
+    .superheroes {
+        width: 90%;
+        padding: 20px;
+    }
+    .cartcl ul li {
+        margin: 0.5em 0;
+    }
+    a.linky {
+        padding-left: 2em;
+    }
+    button.right,
+    button.left {
+        width: auto;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .link:nth-child(even) td:nth-last-of-type(2) {
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(254, 254, 254, 0) 2%, rgba(221, 221, 221, 0.85) 64%, rgba(221, 221, 221, 1) 75%);
+        /* FF3.6+ */
+        
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(2%, rgba(254, 254, 254, 0)), color-stop(64%, rgba(221, 221, 221, 0.85)), color-stop(75%, rgba(221, 221, 221, 1)));
+        /* Chrome,Safari4+ */
+        
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(254, 254, 254, 0) 2%, rgba(221, 221, 221, 0.85) 64%, rgba(221, 221, 221, 1) 75%);
+        /* Chrome10+,Safari5.1+ */
+        
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(254, 254, 254, 0) 2%, rgba(221, 221, 221, 0.85) 64%, rgba(221, 221, 221, 1) 75%);
+        /* Opera 11.10+ */
+        
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(254, 254, 254, 0) 2%, rgba(221, 221, 221, 0.85) 64%, rgba(221, 221, 221, 1) 75%);
+        /* IE10+ */
+        
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(254, 254, 254, 0) 2%, rgba(221, 221, 221, 0.85) 64%, rgba(221, 221, 221, 1) 75%);
+        /* W3C */
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#dddddd', GradientType=1);
+        /* IE6-9 */
+    }
+    .link:nth-child(even) td:nth-last-of-type(1) {
+        background-color: #DDD;
+    }
+    .link:hover,
+    .link:hover td:nth-last-of-type(1),
+    .checkRow label:hover,
+    .cartcl ul li a:hover, .posCourses ol li a:hover {
+        background-color: #85b0e5 !important;
+        background: none;
+    }
+    .link:hover td:nth-last-of-type(2) {
+        background: rgb(185, 214, 249);
+        /* Old browsers */
+        
+        background: -moz-linear-gradient(left, rgba(185, 214, 249, 1) 1%, rgba(133, 176, 229, 1) 100%);
+        /* FF3.6+ */
+        
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(185, 214, 249, 1)), color-stop(100%, rgba(133, 176, 229, 1)));
+        /* Chrome,Safari4+ */
+        
+        background: -webkit-linear-gradient(left, rgba(185, 214, 249, 1) 1%, rgba(133, 176, 229, 1) 100%);
+        /* Chrome10+,Safari5.1+ */
+        
+        background: -o-linear-gradient(left, rgba(185, 214, 249, 1) 1%, rgba(133, 176, 229, 1) 100%);
+        /* Opera 11.10+ */
+        
+        background: -ms-linear-gradient(left, rgba(185, 214, 249, 1) 1%, rgba(133, 176, 229, 1) 100%);
+        /* IE10+ */
+        
+        background: linear-gradient(to right, rgba(185, 214, 249, 1) 1%, rgba(133, 176, 229, 1) 100%);
+        /* W3C */
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b9d6f9', endColorstr='#85b0e5', GradientType=1);
+        /* IE6-9 */
+    }
+}
+
+@media (min-width: 980px) {
+    .display {
+        min-width: 900px;
+    }
+    .options .select {
+        padding-right: 5%;
+    }
+    .options .select:nth-child(even) {
+        padding-left: 5%;
+        padding-right: 0;
+    }
+    .courses table tr:nth-child(2n) {
+    background-color:#DDD;
+    }
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #FFF;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 2px 7.5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #0088FF;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+.electiveDel,
+.itmDel {
+    font-size: 1.3em;
+    background-color: #C73C3C;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 1em;
+    text-align: center;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.electiveRow {
+    padding: 10px;
+}
+
+.electiveRow p {
+    display: inline;
+    padding: 0;
+    text-align: left;
+    float: none;
+}
+
+.show {
+    display: block;
+}
+
+.label--checkbox {
+    position: relative;
+    font-family: Arial, sans-serif;
+    line-height: 135%;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    top: -0.25rem;
+    margin: 0 1.5em 0 0;
+    cursor: pointer;
+}
+
+input[type='checkbox']:before {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #f2f2f2;
+}
+
+input[type='checkbox']:checked:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .5rem;
+    border-color: #0DB4E5;
+    border-top-style: none;
+    border-right-style: none;
+}
+
+input[type='checkbox']:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    left: -2px;
+    top: -2px;
+    height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+html.noscroll,
+body.noscroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+button, td::after{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #85b0e5;
+    margin: 1.9em auto 3.125em auto;
+    color: white;
+    height: 50px;
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+button:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    background-color: #6595d1;
+}
+
+button svg {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    padding-top: 7px;
+    fill: #3B6497;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+#step1 .wrap {
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+.featherlight .featherlight-close-icon {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.featherlight-content {
+    border-bottom: none !important;
+}
+
+.ripple {
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    -webkit-animation: ripple-animation 2s;
+    animation: ripple-animation 2s;
+}
+
+@-webkit-keyframes ripple-animation {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        -webkit-transform: scale(100);
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-animation {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        -webkit-transform: scale(100);
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+/***************
+      Range
+***************/
+
+.range-field {
+    position: relative;
+}
+
+input[type=range],
+input[type=range] + .thumb {
+    cursor: pointer;
+}
+
+input[type=range] {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+}
+
+input[type=range] + .thumb {
+    position: absolute;
+    border: none;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: #26a69a;
+    top: 10px;
+    margin-left: -6px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type=range] + .thumb .value {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: #26a69a;
+    font-size: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input[type=range] + .thumb.active {
+    border-radius: 50% 50% 50% 0;
+}
+
+input[type=range] + .thumb.active .value {
+    color: #fff;
+    margin-left: -1px;
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #c2c0c2;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #26a69a;
+    transform-origin: 50% 50%;
+    margin: -5px 0 0 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range] {
+    /* fix for FF unable to apply focus style bug  */
+    
+    border: 1px solid white;
+    /*required for proper track sizing in FF*/
+}
+
+input[type=range]::-moz-range-track {
+    height: 3px;
+    background: #ddd;
+    border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #26a69a;
+    margin-top: -5px;
+}
+/*hide the outline behind the border*/
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
+}
+
+input[type=range]::-ms-track {
+    height: 3px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #26a69a;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+.display p.description{
+display: block;
+    width:75%;
+    margin:0 auto;
+    float:none;
+}
+.courses{
+display: block;
+    width:100%;
+    margin:0 auto;
+}
+.courses table{
+    width:100%;
+    table-layout: fixed;
+    margin:0 auto;
+    /*border:1px solid grey;*/
+}
+.courses th,.comment td{
+    vertical-align: middle;
+    text-align: center;
+}
+.courses table tr:not(.added),.courses table tr.marg{
+    cursor: pointer;
+}
+.courses table tr td{
+    padding:0.75em;
+    /*border-left: 1px solid grey;
+  border-right: 1px solid grey;*/
+  border-top: 1px solid grey;
+    text-align: center;
+    transition:all 1s ease;
+    position: relative;
+}
+
+.courses table tr.continued td, .courses table tr.comment td/*,.courses table tr td.noborder*/{
+    border-top:none;
+}
+.courses table tr td.noborder{
+    border-top:1px solid grey;
+}
+.courses table tr.comment td{
+    border-bottom:1px solid grey;
+}
+.courses table tr:not(.added) td:last-child::after, tr.marg td:last-child::after {
+    content: "Save This Course";
+    position: absolute;
+    left: 30%;
+    right: 15%;
+    height: 90%;
+    top: 5%;
+    padding: 0.75em;
+    box-sizing: border-box;
+    margin: 0;
+    width: 70%;
+    opacity:0;
+    transition:all 1s ease;
+    z-index: 20;
+    text-align: center;
+    }
+.courses table tr.saved td:last-child::after{
+    content: "Saved Course";
+    background-color:#29CC52;
+}
+.courses table tr:not(.added):hover td:last-child::after, .courses table tr.marg:hover td:last-child::after{
+    left:15%;
+    opacity:1;
+}

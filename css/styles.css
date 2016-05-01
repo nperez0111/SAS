@@ -1,0 +1,24 @@
+#Main * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#clock{
+font-family:"lucida console",monospace;
+font-size:36px;
+color:#333;
+background-color:#000;
+text-transform:uppercase;
+letter-spacing:5px;
+width:300px;
+padding-left:10px;
+}
+.itis{
+color:#fff;
+}
+#row11{text-align:center;}
+#o{
+letter-spacing:-7px;
+}
