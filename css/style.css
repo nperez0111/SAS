@@ -634,6 +634,7 @@ span.loader {
 
 .floatingHeader {
     position: fixed;
+    will-change: transform;
     top: 0;
     visibility: hidden;
     z-index: 200;
