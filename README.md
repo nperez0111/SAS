@@ -1,6 +1,6 @@
 # SAS Dual Enrollment Course Picker Web App
 
-![SAS Course Picker](http://nickthesick.com/images/sasBig.jpg)
+![SAS Course Picker](screen.png)
 
 
 ## What
