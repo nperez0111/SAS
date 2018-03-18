@@ -413,7 +413,7 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin'] == true) {
 
     </script>
         <script src="scripts/jquery-1.7.2.min.js"></script>
-		<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/ractive/1.0.0-build-99/ractive.min.js'></script>
 		<script src="scripts/ractive-events-tap.js"></script>
 		<script src="scripts/jquery.waypoints.min.js"></script>
 		<script src="scripts/sticky.min.js"></script>
